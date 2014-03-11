@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QUnit Roman Numeral Controller Tests</title>
+    <link rel="stylesheet" href="style/qunit.css">
+</head>
+
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture">
+    <div class="container">
+        <div class="generator_container">
+            <h1>Roman Numeral Generator</h1>
+            <label for="generator">Generate a number</label>
+            <input type="text" id="generator" />
+            <button id="generate_button">Generate</button>
+
+            <p id="generate_result"></p>
+        </div>
+
+        <div class="parser_container">
+            <h1>Roman Numeral Parser</h1>
+            <label for="parser">Parse a number</label>
+            <input type="text" id="parser" />
+            <button id="parse_button">Parse</button>
+
+            <p id="parse_result"></p>
+        </div>
+    </div>
+</div>
+<script src="../javascript/vendors/jquery.js"></script>
+<script src="javascript/vendors/qunit.js"></script>
+<script src="javascript/vendors/sinon.js"></script>
+<script src="../javascript/roman_numeral_controller.js"></script>
+<script src="javascript/roman_numeral_controller_tests.js"></script>
+</body>
+</html>
