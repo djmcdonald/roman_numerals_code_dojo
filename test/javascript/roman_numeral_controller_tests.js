@@ -17,7 +17,7 @@ test("should set the generate result", function() {
 });
 
 test("should set an error message when given a value of zero or less to generate", function() {
-   ok(false);
+    equal($('#generate_error').html(), 'Cannot generate zero as a Roman numeral')
 });
 
 test("should set an error message when given a value greater than 3,999 to generate", function() {
